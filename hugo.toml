@@ -34,7 +34,7 @@ theme = 'hugo-theme-stack'
         title = "Fish"
         description = "27 歲，酒吧觀察者。對人際關係保持冷淡。"
         # 💡 關鍵 2：確保 profile 區塊裡也要有這行
-        avatar = "avatar.png" 
+        avatar = "avatar.gif" 
         avatarBorderRadius = "50%"
 
 # 選單設定保持不變
