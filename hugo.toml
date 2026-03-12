@@ -27,7 +27,7 @@ theme = 'hugo-theme-stack'
         emoji = ""
         subtitle = "冷靜觀察，沈默紀錄。這裡是 Fish 的荒原。"
         # 💡 關鍵 1：加上領頭的斜線，確保從根目錄尋找
-        avatar = "avatar.png" 
+        avatar = "/avatar.gif" 
 
     [params.profile]
         enabled = true
