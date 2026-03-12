@@ -8,6 +8,20 @@ theme = 'hugo-theme-stack'
 
 [params]
     mainSections = ["post"]
+
+    [params.widgets]
+    # 首頁右側要顯示什麼
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 15 } }
+    ]
+    # 文章內頁右側要顯示什麼
+    page = [
+        { type = "toc" },           # 文章目錄，長文章必備
+        { type = "categories", params = { limit = 10 } }
+    ]
     
     [params.sidebar]
         emoji = ""
