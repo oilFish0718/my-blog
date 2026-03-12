@@ -1,3 +1,24 @@
+/* 1. 定義字體路徑 */
+@font-face {
+    font-family: 'FishHandwriting'; /* 幫手寫字體取個好記的名字 */
+    /* 💡 修正點：指向 .ttf 檔案，格式改為 'truetype' */
+    src: url('/fonts/cjkfonts_handingwriting4.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. 全站套用字體 */
+:root {
+    --base-font-family: 'FishHandwriting', sans-serif !important;
+    --heading-font-family: 'FishHandwriting', sans-serif !important;
+}
+
+/* 3. 強制執行，確保手寫感滲透到每一個角落 */
+body, h1, h2, h3, h4, h5, h6, .site-name, .menu a, .article-title, .article-subtitle {
+    font-family: 'FishHandwriting', sans-serif !important;
+}
+
 :root {
     /* 1. 調整文章內文的大小，預設通常是 1.1rem (約 17.6px) */
     /* 我們把它稍微放大一點 */
