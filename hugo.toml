@@ -1,6 +1,6 @@
 baseURL = 'https://my-blog-1eu.pages.dev/'
 languageCode = 'zh-tw'
-title = 'VA-11 Hall-A | Fish'
+title = '箱箱油魚的小池塘🐟'
 theme = 'hugo-theme-stack'
 
 [permalinks]
@@ -25,7 +25,7 @@ theme = 'hugo-theme-stack'
     
     [params.sidebar]
         emoji = ""
-        subtitle = "冷靜觀察，沈默紀錄。這裡是 Fish 的荒原。"
+        subtitle = "你不是在逃避,你只是需要點時間來修復自己。"
         # 💡 關鍵 1：加上領頭的斜線，確保從根目錄尋找
         avatar = "avatar.png" 
 
