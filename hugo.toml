@@ -64,17 +64,9 @@ theme = 'hugo-theme-stack'
         icon = "user"      # 👤 人物符號
 
 [[menu.main]]
-    identifier = "search"
-    name = "搜尋"
-    url = "/search/"       # 💡 記得我們先前建立了 search.md 嗎？
-    weight = 4
-    [menu.main.params]
-        icon = "search"    # 🔍 放大鏡符號
-
-[[menu.main]]
     identifier = "goals"
     name = "目標"
     url = "/p/2026-goals/"
     weight = 5
     [menu.main.params]
-        icon = "link"      # 🔗 連結符號（或是用 "target" 靶心符號）
+        icon = "square-check"      # 🔗 連結符號（或是用 "target" 靶心符號）
