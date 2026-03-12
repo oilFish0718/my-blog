@@ -38,3 +38,11 @@ theme = 'hugo-theme-stack'
     name = "About"
     url = "/about/"
     weight = 3
+
+[[menu.main]]
+    identifier = "goals"
+    name = "Goals"
+    url = "/p/2026-goals/"
+    weight = 4
+    [menu.main.params]
+        Icon = "target"
