@@ -9,15 +9,18 @@ theme = 'hugo-theme-stack'
     [params.sidebar]
         emoji = "🍸"
         subtitle = "冷靜觀察，沈默紀錄。這裡是 Fish 的荒原。"
-        avatar = "avatar.png"
+        # 💡 關鍵 1：加上領頭的斜線，確保從根目錄尋找
+        avatar = "/avatar.png" 
 
     [params.profile]
         enabled = true
         title = "Fish"
         description = "27 歲，酒吧觀察者。對人際關係保持冷淡。"
+        # 💡 關鍵 2：確保 profile 區塊裡也要有這行
+        avatar = "/avatar.png" 
         avatarBorderRadius = "50%"
 
-# 選單設定：把會導致報錯的 icon 參數拿掉
+# 選單設定保持不變
 [[menu.main]]
     identifier = "home"
     name = "Home"
