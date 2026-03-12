@@ -3,6 +3,9 @@ languageCode = 'zh-tw'
 title = 'VA-11 Hall-A | Fish'
 theme = 'hugo-theme-stack'
 
+[permalinks]
+    post = "/p/:slug/"
+
 [params]
     mainSections = ["post"]
     
