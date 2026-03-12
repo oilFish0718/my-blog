@@ -43,21 +43,37 @@ theme = 'hugo-theme-stack'
     name = "主頁"
     url = "/"
     weight = 1
+    [menu.main.params]
+        icon = "home"      # 🏠 房子符號
 
 [[menu.main]]
     identifier = "archives"
     name = "歸檔"
     url = "/archives/"
     weight = 2
+    [menu.main.params]
+        icon = "archive"   # 📦 檔案箱符號
 
 [[menu.main]]
     identifier = "about"
     name = "關於我"
     url = "/about/"
     weight = 3
+    [menu.main.params]
+        icon = "user"      # 👤 人物符號
+
+[[menu.main]]
+    identifier = "search"
+    name = "搜尋"
+    url = "/search/"       # 💡 記得我們先前建立了 search.md 嗎？
+    weight = 4
+    [menu.main.params]
+        icon = "search"    # 🔍 放大鏡符號
 
 [[menu.main]]
     identifier = "goals"
     name = "目標"
     url = "/p/2026-goals/"
-    weight = 4
+    weight = 5
+    [menu.main.params]
+        icon = "link"      # 🔗 連結符號（或是用 "target" 靶心符號）
