@@ -7,17 +7,13 @@
     font-display: swap;
 }
 
-/* 2. 全站核心變數設定：背景灰色 + 字體設定 + 字級放大 */
+/* 2. 全站核心字體設定：僅包含字體與大小放大 */
 :root {
-    /* 背景灰色配方 */
-    --body-background: #1a1a1a !important; 
-    --card-background: #242424 !important; 
-
-    /* 字體與大小配方 */
+    /* 字體變數 */
     --base-font-family: 'FishHandwriting', sans-serif !important;
     --heading-font-family: 'FishHandwriting', sans-serif !important;
     
-    /* 大幅度放大內文：從 1.25rem 提升到 1.4rem */
+    /* 大幅度放大內文：1.4rem (約 22px) */
     --article-font-size: 1.4rem !important; 
 }
 
@@ -28,25 +24,23 @@ body, h1, h2, h3, h4, h5, h6,
     font-family: 'FishHandwriting', sans-serif !important;
 }
 
-/* 4. 閱讀體驗優化 */
+/* 4. 閱讀體驗優化（行距與字距） */
 body {
-    line-height: 1.9 !important;      /* 增加行高，手寫字才不會打架 */
-    letter-spacing: 0.04em !important; /* 稍微拉開字距，增加呼吸感 */
-    color: #d1d1d1 !important;        /* 文字稍微調柔和一點，不刺眼 */
+    line-height: 1.9 !important;      /* 增加行高，手寫字才不會重疊 */
+    letter-spacing: 0.05em !important; /* 增加字距，手寫感更清爽 */
 }
 
-/* 5. 標題與細節調整 */
+/* 5. 標題與側邊欄名字同步放大 */
 .article-title {
-    font-size: 2.8rem !important;     /* 標題要有份量 */
+    font-size: 2.8rem !important;     
     line-height: 1.3 !important;
 }
 
 .site-name {
-    font-size: 2rem !important;       /* 左側名字放大 */
+    font-size: 2.2rem !important;     /* 讓 Fish 的名字更醒目 */
 }
 
-.footer {
-    background-color: #1a1a1a !important; 
-    border-top: 1px solid #333333 !important;
-    color: #888888 !important;
+/* 讓文章內容的段落間距稍微大一點 */
+.article-content p {
+    margin-bottom: 1.5em !important;
 }
