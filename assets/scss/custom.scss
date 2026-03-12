@@ -1,45 +1,31 @@
+/* 強制覆蓋全站主色調 */
 :root {
-    /* 主色調：沉穩的鋼鐵灰 */
-    --accent-color: #8e8e8e;           /* 連結與按鈕的主色 */
-    --accent-color-darker: #666666;    /* 滑鼠懸停時的顏色 */
-    
-    /* 整體卡片背景：微調為冷灰色調 */
-    --card-background: #1e1e1e;
+    --accent-color: #8e8e8e !important;
+    --accent-color-darker: #666666 !important;
+    --card-background: #1e1e1e !important;
 }
 
-/* 底部背景：舊型工業灰色 */
+/* 底部背景：強制改為灰色 */
 .footer {
-    /* 使用純粹的深灰，取消漸層以維持簡潔感 */
-    background-color: #232323; 
-    
-    /* 頂部加上一條細微的深色接縫，像機器外殼的邊界 */
-    border-top: 1px solid #333333; 
-    
-    padding: 40px 0; 
-    margin-top: 50px;
-    
-    /* 文字改為低調的暗灰色，減少視覺侵略性 */
-    color: #888888; 
+    background-color: #232323 !important; 
+    border-top: 1px solid #333333 !important; 
+    padding: 40px 0 !important; 
+    margin-top: 50px !important;
+    color: #888888 !important; 
 
     a {
-        color: #aaaaaa;
-        text-decoration: underline; /* 增加一點老式網頁的裝飾感 */
+        color: #aaaaaa !important;
         &:hover {
-            color: #ffffff;         /* 懸停時變白，像螢幕通電 */
-            text-decoration: none;
+            color: #ffffff !important;
         }
     }
 }
 
-/* 修正選單的選中狀態，同步為灰色 */
+/* 選單狀態同步 */
 .menu li.current {
-    border-left-color: var(--accent-color);
-    background-color: rgba(255, 255, 255, 0.05);
-    
+    border-left-color: var(--accent-color) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
     a {
-        color: #ffffff;
-        span {
-            font-weight: bold;
-        }
+        color: #ffffff !important;
     }
 }
