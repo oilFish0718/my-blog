@@ -52,7 +52,8 @@ theme = 'hugo-theme-stack'
     url = "/archives/"
     weight = 2
     [menu.main.params]
-        icon = "archive"   # 📦 檔案箱符號
+        # 💡 把 "archive" 改成 "archives" 試試看，或者改用更穩的 "hash"
+        icon = "archives"
 
 [[menu.main]]
     identifier = "about"
