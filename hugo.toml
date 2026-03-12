@@ -9,7 +9,7 @@ theme = 'hugo-theme-stack'
     [params.sidebar]
         emoji = "🍸"
         subtitle = "冷靜觀察，沈默紀錄。這裡是 Fish 的荒原。"
-        avatar = "avatar.png" # 確保 static 資料夾裡有這張圖
+        avatar = "avatar.png"
 
     [params.profile]
         enabled = true
@@ -17,17 +17,21 @@ theme = 'hugo-theme-stack'
         description = "27 歲，酒吧觀察者。對人際關係保持冷淡。"
         avatarBorderRadius = "50%"
 
-# 選單設定 (現在有 assets/icons 了，這裡就不會報錯)
+# 選單設定：把會導致報錯的 icon 參數拿掉
 [[menu.main]]
     identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
-    params = { icon = "home" }
 
 [[menu.main]]
     identifier = "archives"
     name = "Archives"
     url = "/archives/"
     weight = 2
-    params = { icon = "archive" }
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
