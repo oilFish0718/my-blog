@@ -1,21 +1,20 @@
 /* 1. 定義字體路徑 */
 @font-face {
-    font-family: 'MyCustomFont';
-    /* 💡 修正點：.otf 檔案的格式名稱必須寫成 'opentype' */
-    src: url('/fonts/my-font.otf') format('opentype'); 
+    font-family: 'NaniFont'; 
+    /* 💡 修正點：指向新的 .woff 檔案，格式改為 'woff' */
+    src: url('/fonts/NaniFont-Light.woff') format('woff'); 
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-/* 2. 叫全站使用這個字體 */
+/* 2. 全站套用字體 */
 :root {
-    /* 這裡確保名字跟上面定義的完全一致 */
-    --base-font-family: 'MyCustomFont', sans-serif !important;
-    --heading-font-family: 'MyCustomFont', sans-serif !important;
+    --base-font-family: 'NaniFont', sans-serif !important;
+    --heading-font-family: 'NaniFont', sans-serif !important;
 }
 
-/* 3. 額外保險：直接強制 body 套用 */
-body {
-    font-family: 'MyCustomFont', sans-serif !important;
+/* 3. 強制執行，確保不會被主題預設字體蓋過 */
+body, h1, h2, h3, h4, h5, h6, .site-name, .menu a {
+    font-family: 'NaniFont', sans-serif !important;
 }
