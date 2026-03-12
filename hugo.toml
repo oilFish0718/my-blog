@@ -40,24 +40,24 @@ theme = 'hugo-theme-stack'
 # 選單設定保持不變
 [[menu.main]]
     identifier = "home"
-    name = "Home"
+    name = "主頁"
     url = "/"
     weight = 1
 
 [[menu.main]]
     identifier = "archives"
-    name = "Archives"
+    name = "歸檔"
     url = "/archives/"
     weight = 2
 
 [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "關於我"
     url = "/about/"
     weight = 3
 
 [[menu.main]]
     identifier = "goals"
-    name = "Goals"
+    name = "目標"
     url = "/p/2026-goals/"
     weight = 4
