@@ -2,7 +2,7 @@
 title: "荒原日誌 #01：霓虹燈下的第一聲嘆息"
 description: "這不是為了社交，只是為了在生物鐘混亂的深夜裡，留下一點清醒的痕跡。"
 date: 2026-03-11T12:00:00+08:00
-image: "avatar.png"
+image: "/avatar.png"
 categories:
     - 觀察紀錄
 tags:
