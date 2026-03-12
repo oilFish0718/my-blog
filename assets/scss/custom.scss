@@ -1,16 +1,45 @@
-/* 1. 從 Google Fonts 載入思源黑體 (Noto Sans TC) */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
-
-/* 2. 將字體應用到全站 */
 :root {
-    --base-font-family: 'Noto Sans TC', sans-serif;
-    --header-font-family: 'Noto Sans TC', sans-serif;
+    /* 主色調：沉穩的鋼鐵灰 */
+    --accent-color: #8e8e8e;           /* 連結與按鈕的主色 */
+    --accent-color-darker: #666666;    /* 滑鼠懸停時的顏色 */
+    
+    /* 整體卡片背景：微調為冷灰色調 */
+    --card-background: #1e1e1e;
 }
 
-body {
-    font-family: var(--base-font-family);
+/* 底部背景：舊型工業灰色 */
+.footer {
+    /* 使用純粹的深灰，取消漸層以維持簡潔感 */
+    background-color: #232323; 
+    
+    /* 頂部加上一條細微的深色接縫，像機器外殼的邊界 */
+    border-top: 1px solid #333333; 
+    
+    padding: 40px 0; 
+    margin-top: 50px;
+    
+    /* 文字改為低調的暗灰色，減少視覺侵略性 */
+    color: #888888; 
+
+    a {
+        color: #aaaaaa;
+        text-decoration: underline; /* 增加一點老式網頁的裝飾感 */
+        &:hover {
+            color: #ffffff;         /* 懸停時變白，像螢幕通電 */
+            text-decoration: none;
+        }
+    }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font-family);
+/* 修正選單的選中狀態，同步為灰色 */
+.menu li.current {
+    border-left-color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.05);
+    
+    a {
+        color: #ffffff;
+        span {
+            font-weight: bold;
+        }
+    }
 }
