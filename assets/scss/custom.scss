@@ -1,0 +1,14 @@
+/* 1. 定義字體路徑 */
+@font-face {
+    font-family: 'MyCustomFont'; /* 妳幫字體取的名字 */
+    src: url('/fonts/my-font.otf') format('otf'); /* 指向妳剛才放的位置 */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. 叫全站使用這個字體 */
+:root {
+    --base-font-family: 'MyCustomFont', sans-serif !important;
+    --heading-font-family: 'MyCustomFont', sans-serif !important;
+}
