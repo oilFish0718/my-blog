@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on VA-11 Hall-A | Fish</title>
+        <title>Tags on 箱箱油魚的小池塘🐟</title>
         <link>http://localhost:1313/tags/</link>
-        <description>Recent content in Tags on VA-11 Hall-A | Fish</description>
+        <description>Recent content in Tags on 箱箱油魚的小池塘🐟</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-tw</language><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /></channel>
+        <language>zh-tw</language>
+        <lastBuildDate>Wed, 11 Mar 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>生活碎屑</title>
+            <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E7%A2%8E%E5%B1%91/</link>
+            <pubDate>Wed, 11 Mar 2026 12:00:00 +0800</pubDate>
+            <guid>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E7%A2%8E%E5%B1%91/</guid>
+            <description></description>
+        </item><item>
+            <title>自我成長和反思</title>
+            <link>http://localhost:1313/tags/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7%E5%92%8C%E5%8F%8D%E6%80%9D/</link>
+            <pubDate>Wed, 11 Mar 2026 12:00:00 +0800</pubDate>
+            <guid>http://localhost:1313/tags/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7%E5%92%8C%E5%8F%8D%E6%80%9D/</guid>
+            <description></description>
+        </item></channel>
 </rss>

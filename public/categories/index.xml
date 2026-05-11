@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on VA-11 Hall-A | Fish</title>
+        <title>Categories on 箱箱油魚的小池塘🐟</title>
         <link>http://localhost:1313/categories/</link>
-        <description>Recent content in Categories on VA-11 Hall-A | Fish</description>
+        <description>Recent content in Categories on 箱箱油魚的小池塘🐟</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-tw</language><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /></channel>
+        <language>zh-tw</language>
+        <lastBuildDate>Wed, 11 Mar 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>告誡</title>
+            <link>http://localhost:1313/categories/%E5%91%8A%E8%AA%A1/</link>
+            <pubDate>Wed, 11 Mar 2026 12:00:00 +0800</pubDate>
+            <guid>http://localhost:1313/categories/%E5%91%8A%E8%AA%A1/</guid>
+            <description></description>
+        </item></channel>
 </rss>
