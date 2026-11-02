@@ -1,6 +1,6 @@
 baseURL = 'https://my-blog-1eu.pages.dev/'
 languageCode = 'zh-tw'
-title = '箱箱油魚的小池塘🐟'
+title = '箱中一隅'
 theme = 'hugo-theme-stack'
 
 [permalinks]
@@ -23,18 +23,16 @@ theme = 'hugo-theme-stack'
         { type = "categories", params = { limit = 10 } }
     ]
     
-    [params.sidebar]
+[params.sidebar]
         emoji = ""
         subtitle = "你不是在逃避,你只是需要點時間來修復自己。"
-        # 💡 關鍵 1：加上領頭的斜線，確保從根目錄尋找
-        avatar = "avatar.png" 
+        avatar = "/img/avatar.png"
 
     [params.profile]
         enabled = true
         title = "Fish"
         description = "27 歲，酒吧觀察者。對人際關係保持冷淡。"
-        # 💡 關鍵 2：確保 profile 區塊裡也要有這行
-        avatar = "avatar.png" 
+        avatar = "/img/avatar.png"
         avatarBorderRadius = "50%"
 
 # 選單設定保持不變

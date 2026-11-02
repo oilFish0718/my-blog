@@ -44,3 +44,104 @@ body {
 .article-content p {
     margin-bottom: 1.5em !important;
 }
+
+/* 全站大背景圖設定 */
+body {
+    background-image: url('/img/bg.jpg') !important;
+    background-size: cover !important;        /* 滿版覆蓋螢幕 */
+    background-position: center center !important; /* 置中對齊 */
+    background-attachment: fixed !important;  /* 滾動時背景固定不滑動 */
+    background-repeat: no-repeat !important;
+}
+
+/* 讓內容卡片微透，透出底圖質感 */
+.article-page, .main-container, .card {
+    background-color: rgba(36, 36, 36, 0.3) !important; /* 最後的 0.85 代表透明度 */
+    backdrop-filter: blur(8px); /* 毛玻璃模糊效果 */
+}
+
+
+/* 調整文章封面圖的對齊位置 */
+.article-featured-image img {
+    object-position: center 50% !important; /* 預設是 50%，改小 (如 20%~40%) 會讓畫面重心往上露出來，相當於把圖片整體往下移 */
+}
+
+/* 使用百分比微調垂直可見位置 */
+.article-header .article-image img,
+.article-image img,
+.article-featured-image img {
+    object-fit: cover !important;
+    object-position: center 35% !important; /* 調整第二個數值：越接近 0% 越往上，越接近 50% 越置中 */
+}
+
+/* 放大左上角個人頭像 */
+.sidebar .sidebar-header .site-avatar img,
+.sidebar header .site-avatar img,
+.site-avatar img {
+    width: 120px !important;    /* 預設約 80px，可改成 100px ~ 140px */
+    height: 120px !important;
+    max-width: none !important;
+    border-radius: 50% !important; /* 確保維持正圓形 */
+    object-fit: cover !important;  /* 避免圖片被拉伸變形 */
+}
+
+/* 讓包裹頭像的外框同步縮放 */
+.site-avatar {
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto 1.5rem auto !important; /* 置中並保留下方留白 */
+}
+
+/* 修正頂部與底部回彈時露出白邊的問題 */
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* 同時把底色設為深色，就算回彈也不會亮出刺眼白邊 */
+    background-color: #1a1a1a !important; 
+    
+    /* 背景圖同時掛在最底層 */
+    background-image: url('/img/bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+/* 關閉 Mac 觸控板過度滾動時的回彈露底現象 */
+html {
+    overscroll-behavior-y: none;
+}
+
+/* 讓側邊欄選單按鈕各自擁有微透明膠囊底色 */
+.menu li {
+    margin-bottom: 8px !important; /* 按鈕彼此之間的垂直間距 */
+}
+
+.menu li a {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 16px !important;          /* 內部留白，撐出膠囊感 */
+    background: rgba(255, 255, 255, 0.12) !important; /* 微透明亮底（暗底可改成 rgba(0,0,0,0.3)） */
+    backdrop-filter: blur(8px) !important;  /* 毛玻璃效果 */
+    -webkit-backdrop-filter: blur(8px) !important;
+    border-radius: 10px !important;         /* 圓角 */
+    border: 1px solid rgba(255, 255, 255, 0.08) !important; /* 極細微邊框，增加精緻度 */
+    transition: all 0.25s ease !important;  /* 平滑過渡動效 */
+}
+
+
+/* 當前所在頁面的按鈕高亮狀態 */
+.menu li.current a {
+    background: rgba(255, 255, 255, 0.28) !important;
+    font-weight: bold;
+}
+
+/* 僅針對內頁（文章頁面）最上方的封面圖調整垂直位置 */
+.article-page .article-image img,
+.main-article .article-image img,
+.article-featured-image img {
+    object-fit: cover !important;
+    object-position: center 50% !important; /* 數值可依需求在 30% ~ 50% 之間微調 */
+}
